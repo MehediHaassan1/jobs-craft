@@ -26,9 +26,9 @@ const Navbar = () => {
                     <img src={logo} alt="jobs craft" />
                 </Link>
                 <div
-                    className={`absolute flex flex-col w-full text-center duration-300 bg-gradient-to-r from-[#656565] to-[#B3FFB3] py-4 left-0 
-                ${isOpen ? "top-20" : "top-[-100vh]"}
-                md:static md:flex-row md:bg-none md:w-fit
+                    className={`absolute flex flex-col w-full text-center duration-300 bg-gradient-to-r from-[#656565] to-[#B3FFB3] py-4  
+                ${isOpen ? "top-20 left-0" : "top-[-100vh] left-0"}
+                md:sticky md:top-0 md:flex-row md:bg-none md:w-fit
                 `}
                 >
                     {navMenu.map((menu) => (
