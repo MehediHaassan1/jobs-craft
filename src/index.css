@@ -10,6 +10,13 @@
         background-clip: text;
         color: transparent;
     }
+
+    .linear-border {
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 8px;
+        border-image: linear-gradient(to right, #656565, #b3ffb3) 1;
+    }
 }
 
 body {

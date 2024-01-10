@@ -1,0 +1,137 @@
+{
+    "featuredJobs": [
+        {
+            "id": "TISE001",
+            "companyName": "Mixlr",
+            "jobTitle": "Software Engineer",
+            "jobType": "Full-time",
+            "jobDetails": "Exciting opportunity for a skilled software engineer to join our dynamic team. You'll be at the forefront of cutting-edge projects, developing and maintaining robust software applications. Collaborate with cross-functional teams to innovate and drive technological advancements.",
+            "companyLogo": "https://i.ibb.co/GWnngf9/mixlr.png",
+            "jobLocation": "Onsite",
+            "jobDescription": "At Tech Innovators, we value creativity and expertise. Join us to contribute your skills and be a key player in shaping the future of technology.",
+            "responsibilities": [
+                "Design and develop software solutions.",
+                "Collaborate with product managers and designers.",
+                "Participate in code reviews and maintain code quality."
+            ],
+            "educationalBackground": "Bachelor's degree in Computer Science or a related field.",
+            "skills": [
+                "Java",
+                "JavaScript",
+                "React",
+                "Node.js"
+            ],
+            "applyLink": "https://example.com/apply/software-engineer"
+        },
+        {
+            "id": "HWMR002",
+            "companyName": "Servicenow",
+            "jobTitle": "Medical Researcher",
+            "jobType": "Full-time",
+            "jobDetails": "Contribute to groundbreaking medical research initiatives at HealthWell. As a Medical Researcher, you'll play a crucial role in conducting experiments, analyzing research data, and contributing to the advancement of healthcare outcomes.",
+            "companyLogo": "https://i.ibb.co/nRXZDBC/servicenow.png",
+            "jobLocation": "Remote",
+            "jobDescription": "Join a team dedicated to improving healthcare through innovative research. At HealthWell, your contributions make a difference.",
+            "responsibilities": [
+                "Conduct medical research experiments.",
+                "Analyze and interpret research data.",
+                "Collaborate with healthcare professionals and researchers."
+            ],
+            "educationalBackground": "Ph.D. in Medicine or a related field.",
+            "skills": [
+                "Research methodology",
+                "Data analysis",
+                "Medical knowledge"
+            ],
+            "applyLink": "https://example.com/apply/medical-researcher"
+        },
+        {
+            "id": "FPFA003",
+            "companyName": "Udemy",
+            "jobTitle": "Financial Analyst",
+            "jobType": "Full-time",
+            "jobDetails": "Exciting opportunity for a finance professional to join FinancePros. As a Financial Analyst, you'll play a key role in analyzing financial data, preparing reports, and contributing to strategic decisions.",
+            "companyLogo": "https://i.ibb.co/tL72wn6/udemy.png",
+            "jobLocation": "Onsite",
+            "jobDescription": "Join a finance team that values precision and strategic thinking. At FinancePros, your insights shape financial strategies.",
+            "responsibilities": [
+                "Analyze financial data and trends.",
+                "Prepare financial reports and forecasts.",
+                "Collaborate with finance and business teams."
+            ],
+            "educationalBackground": "Bachelor's degree in Finance or Accounting.",
+            "skills": [
+                "Financial analysis",
+                "Excel",
+                "Budgeting"
+            ],
+            "applyLink": "https://example.com/apply/financial-analyst"
+        },
+        {
+            "id": "ESCD004",
+            "companyName": "QuilbotTech Solutions",
+            "jobTitle": "Educational Content Developer",
+            "jobType": "Full-time",
+            "jobDetails": "Join EduTech Solutions as an Educational Content Developer. Contribute to innovative e-learning solutions by creating engaging and interactive educational content. This remote position allows you to work from anywhere.",
+            "companyLogo": "https://i.ibb.co/Ptyq7rk/quilbot.png",
+            "jobLocation": "Remote",
+            "jobDescription": "At EduTech Solutions, we are passionate about transforming education through technology. Join us to make a meaningful impact.",
+            "responsibilities": [
+                "Develop interactive educational content.",
+                "Collaborate with subject matter experts and educators.",
+                "Ensure content aligns with educational standards."
+            ],
+            "educationalBackground": "Bachelor's degree in Education or a related field.",
+            "skills": [
+                "Content development",
+                "E-learning tools",
+                "Instructional design"
+            ],
+            "applyLink": "https://example.com/apply/content-developer"
+        },
+        {
+            "id": "GTIE005",
+            "companyName": "Tidal Inc.",
+            "jobTitle": "Environmental Scientist",
+            "jobType": "Full-time",
+            "jobDetails": "Be part of GreenTech Innovations and contribute to sustainability and environmental projects. As an Environmental Scientist, you'll conduct research, provide recommendations, and contribute to a greener future.",
+            "companyLogo": "https://i.ibb.co/5BTtY1c/tidal.png",
+            "jobLocation": "Onsite",
+            "jobDescription": "Join a team dedicated to creating a sustainable and eco-friendly environment. Your work at GreenTech Innovations matters.",
+            "responsibilities": [
+                "Conduct environmental research and assessments.",
+                "Provide recommendations for sustainable practices.",
+                "Collaborate with environmental experts and policymakers."
+            ],
+            "educationalBackground": "Master's degree in Environmental Science or a related field.",
+            "skills": [
+                "Environmental research",
+                "Sustainability",
+                "Data analysis"
+            ],
+            "applyLink": "https://example.com/apply/environmental-scientist"
+        },
+        {
+            "id": "CSGD006",
+            "companyName": "Creative Strapi",
+            "jobTitle": "Graphic Designer",
+            "jobType": "Full-time",
+            "jobDetails": "Express your creativity through visual design projects. Join Creative Solutions as a Graphic Designer and contribute to visually stunning projects. This freelance position allows you to showcase your skills.",
+            "companyLogo": "https://i.ibb.co/mXQqY3f/strapi.png",
+            "jobLocation": "Remote",
+            "jobDescription": "At Creative Solutions, we value innovation and artistic expression. Join us to make an impact in the world of graphic design.",
+            "responsibilities": [
+                "Create visually appealing designs for various projects.",
+                "Collaborate with clients on design concepts and requirements.",
+                "Bring creative solutions to design challenges."
+            ],
+            "educationalBackground": "Bachelor's degree in Graphic Design or a related field.",
+            "skills": [
+                "Adobe Creative Suite",
+                "Graphic design principles",
+                "Creativity"
+            ],
+            "applyLink": "https://example.com/apply/graphic-designer"
+        }
+    ]
+}

@@ -3,6 +3,7 @@ import HomeHero from "../components/HomeHero";
 import { motion } from "framer-motion";
 import { useLoaderData } from "react-router-dom";
 import JobCategory from "../components/JobCategory";
+import FeaturedJobs from "../components/FeaturedJobs";
 
 const routeAnimate = {
     hidden: {
@@ -22,13 +23,11 @@ const routeAnimate = {
 };
 
 const Home = () => {
-    const joblist = useLoaderData();
-    const { jobCategories } = joblist;
-    
     return (
         <div>
             <HomeHero />
-            <JobCategory jobCategories={jobCategories} />
+            <JobCategory />
+            <FeaturedJobs/>
         </div>
     );
 };
