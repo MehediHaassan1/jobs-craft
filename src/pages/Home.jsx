@@ -1,6 +1,8 @@
 import React from "react";
 import HomeHero from "../components/HomeHero";
 import { motion } from "framer-motion";
+import { useLoaderData } from "react-router-dom";
+import JobCategory from "../components/JobCategory";
 
 const routeAnimate = {
     hidden: {
@@ -20,9 +22,13 @@ const routeAnimate = {
 };
 
 const Home = () => {
+    const joblist = useLoaderData();
+    const { jobCategories } = joblist;
+    
     return (
         <div>
             <HomeHero />
+            <JobCategory jobCategories={jobCategories} />
         </div>
     );
 };

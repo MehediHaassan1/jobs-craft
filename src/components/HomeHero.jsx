@@ -49,7 +49,7 @@ const imageAnimate = {
 
 const HomeHero = () => {
     return (
-        <div className="md:flex md:gap-5 justify-between items-center h-screen">
+        <div className="md:flex md:gap-5 justify-between items-center min-h-screen">
             <motion.div
                 variants={infoAnimate}
                 initial="hidden"
