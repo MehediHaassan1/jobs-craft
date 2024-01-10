@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.svg";
 import { Cross as Hamburger } from "hamburger-react";
@@ -14,13 +14,35 @@ const Navbar = () => {
         { id: 4, path: "/blogs", pathName: "blogs" },
     ];
 
+    const [scroll, setScroll] = useState(false);
+
+    const handleScroll = () => {
+        if (window.scrollY > 50) {
+            setScroll(true);
+        } else {
+            setScroll(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, [scroll]);
+
     return (
         <>
             <motion.div
                 initial={{ y: -100 }}
                 animate={{ y: 0 }}
                 transition={{ type: "spring", stiffness: 120 }}
-                className="max-w-7xl mx-auto h-20 flex justify-between items-center relative px-2 lg:px-0"
+                className={`max-w-7xl mx-auto h-20 flex justify-between items-center relative px-2 lg:px-0 md:sticky md:top-0 md:border-b-2 border-[#B3FFB3] ${
+                    scroll
+                        ? "bg-white-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 z-20"
+                        : "bg-transparent z-20"
+                }`}
             >
                 <Link to="/">
                     <img src={logo} alt="jobs craft" />
@@ -28,7 +50,7 @@ const Navbar = () => {
                 <div
                     className={`absolute flex flex-col w-full text-center duration-300 bg-gradient-to-r from-[#656565] to-[#B3FFB3] py-4  
                 ${isOpen ? "top-20 left-0" : "top-[-100vh] left-0"}
-                md:sticky md:top-0 md:flex-row md:bg-none md:w-fit
+                md:static md:flex-row md:bg-none md:w-fit
                 `}
                 >
                     {navMenu.map((menu) => (
@@ -60,11 +82,6 @@ const Navbar = () => {
                     </div>
                 </div>
             </motion.div>
-            <motion.div
-                initial={{ y: 100 }}
-                animate={{ y: 0 }}
-                className="border-t-2 border-[#B3FFB3] pb-2"
-            ></motion.div>
         </>
     );
 };
