@@ -4,10 +4,16 @@ import { MdOutlineCalendarViewDay } from "react-icons/md";
 import { IoCall } from "react-icons/io5";
 import { FaEnvelope } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
+import { addToDb } from "../utilities/fakeDb";
 
 const JobDetail = ({ jobDetail }) => {
-    const { jobTitle, jobDescription, jobDetails, educationalBackground } =
+    const { id, jobTitle, jobDescription, jobDetails, educationalBackground } =
         jobDetail;
+
+    const handleApplyNow = (id) => {
+        alert("apply is done");
+        addToDb(id);
+    };
     return (
         <>
             <div className="md:col-span-2">
@@ -62,7 +68,10 @@ const JobDetail = ({ jobDetail }) => {
                     </p>
                 </div>
                 <div>
-                    <button className="bg-gradient-to-r from-[#656565] to-[#B3FFB3] border rounded px-5 py-3 font-semibold capitalize w-full">
+                    <button
+                        onClick={() => handleApplyNow(id)}
+                        className="bg-gradient-to-r from-[#656565] to-[#B3FFB3] border rounded px-5 py-3 font-semibold capitalize w-full"
+                    >
                         apply now
                     </button>
                 </div>

@@ -12,13 +12,11 @@ const JobDetails = () => {
             .then((res) => res.json())
             .then((data) => setMyJobs(data));
     }, []);
-    console.log(myJobs);
 
     const params = useParams();
     const jobId = params.jobId;
 
     const jobDetail = myJobs && myJobs.find((job) => job.id === jobId);
-    console.log(jobDetail);
 
     return (
         <div className="">

@@ -34,7 +34,7 @@ const FeaturedJobs = () => {
                         <FeaturedJob key={job.id} job={job}></FeaturedJob>
                     ))}
                 </div>
-                <div className={`text-center ${showBtn ? "block" : "hidden"}`}>
+                <div className={`text-center mb-10 ${showBtn ? "block" : "hidden"}`}>
                     <button
                         onClick={handleAllJobs}
                         className="bg-gradient-to-r from-[#656565] to-[#B3FFB3] border rounded px-5 py-3 font-semibold capitalize"

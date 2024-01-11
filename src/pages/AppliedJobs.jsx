@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
+import AppliedJobsHero from "../components/AppliedJobsHero";
 
 const AppliedJobs = () => {
     return (
         <div>
-            <h1>this is applied jobs page.</h1>
+            <AppliedJobsHero />
         </div>
     );
 };

@@ -8,6 +8,7 @@ import AppliedJobs from "./pages/AppliedJobs.jsx";
 import Statistics from "./pages/Statistics.jsx";
 import { AnimatePresence } from "framer-motion";
 import JobDetails from "./components/JobDetails.jsx";
+import Blogs from "./pages/Blogs.jsx";
 
 const router = createBrowserRouter([
     {
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "blogs",
-                element: <AppliedJobs />,
+                element: <Blogs />,
             },
         ],
     },
