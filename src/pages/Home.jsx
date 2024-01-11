@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createContext } from "react";
 import HomeHero from "../components/HomeHero";
 import { motion } from "framer-motion";
 import { useLoaderData } from "react-router-dom";
@@ -27,7 +27,7 @@ const Home = () => {
         <div>
             <HomeHero />
             <JobCategory />
-            <FeaturedJobs/>
+            <FeaturedJobs />
         </div>
     );
 };

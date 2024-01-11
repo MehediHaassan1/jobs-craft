@@ -5,8 +5,9 @@ const JobCategory = () => {
     useEffect(() => {
         fetch("jobsCateroy.json")
             .then((res) => res.json())
-            .then((data) => setJobCategories(data.jobCategories));
+            .then((data) => setJobCategories(data));
     }, []);
+
     return (
         <div className="min-h-screen lg:flex justify-center items-center">
             <div>

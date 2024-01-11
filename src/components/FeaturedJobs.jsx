@@ -7,20 +7,19 @@ const FeaturedJobs = () => {
     useEffect(() => {
         fetch("featuredJobs.json")
             .then((res) => res.json())
-            .then((data) => setJobs(data.featuredJobs));
+            .then((data) => setJobs(data));
     }, []);
 
     useEffect(() => {
         setSlicedJobs(jobs.slice(0, 4));
     }, [jobs]);
 
-    const [showBtn, setShowBtn] = useState(true)
+    const [showBtn, setShowBtn] = useState(true);
     const handleAllJobs = () => {
         setSlicedJobs(jobs);
-        setShowBtn(false)
+        setShowBtn(false);
     };
 
-    // console.log(slicedJobs);
     return (
         <div>
             <h1 className="text-4xl lg:text-5xl text-center font-semibold">

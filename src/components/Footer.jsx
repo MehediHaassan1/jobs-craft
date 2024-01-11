@@ -5,7 +5,7 @@ import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa6";
 const Footer = () => {
     return (
         <>
-            <div className="bg-[#A6D3A0] mt-10 grid grid-cols-1 gap-10 md:gap-5 lg:gap-5 md:grid-cols-2 lg:grid-cols-5   px-5 py-10 border-b border-[#B3FFB3]">
+            <div className="bg-[#A6D3A0] grid grid-cols-1 gap-10 md:gap-5 lg:gap-5 md:grid-cols-2 lg:grid-cols-5   px-5 py-10 border-b border-[#B3FFB3]">
                 <div className="md:col-span-2 lg:col-span-1">
                     <img src={logo} alt="logo" />
                     <p className="text-sm my-5">

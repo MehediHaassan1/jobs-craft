@@ -1,6 +1,7 @@
 import React from "react";
 import location from "../assets/images/Location.png";
 import money from "../assets/images/money.png";
+import { Link } from "react-router-dom";
 
 const FeaturedJob = ({ job }) => {
     const { id, companyLogo, jobTitle, companyName, jobType, jobLocation } =
@@ -32,9 +33,11 @@ const FeaturedJob = ({ job }) => {
                     Salary : 100K - 150K
                 </h4>
             </div>
-            <button className="bg-gradient-to-r from-[#656565] to-[#B3FFB3] border rounded px-5 py-3 font-semibold capitalize mt-4">
-                View Details
-            </button>
+            <Link to={`/job-details/${id}`}>
+                <button className="bg-gradient-to-r from-[#656565] to-[#B3FFB3] border rounded px-5 py-3 font-semibold capitalize mt-4">
+                    View Details
+                </button>
+            </Link>
         </div>
     );
 };

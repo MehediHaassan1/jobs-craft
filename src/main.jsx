@@ -7,6 +7,7 @@ import Home from "./pages/Home.jsx";
 import AppliedJobs from "./pages/AppliedJobs.jsx";
 import Statistics from "./pages/Statistics.jsx";
 import { AnimatePresence } from "framer-motion";
+import JobDetails from "./components/JobDetails.jsx";
 
 const router = createBrowserRouter([
     {
@@ -16,6 +17,11 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home />,
+            },
+            {
+                path: "job-details/:jobId",
+                element: <JobDetails />,
+                loader: () => fetch("featuredJobs.json"),
             },
             {
                 path: "applied-jobs",

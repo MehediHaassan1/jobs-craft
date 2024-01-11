@@ -17,6 +17,42 @@
         border-radius: 8px;
         border-image: linear-gradient(to right, #656565, #b3ffb3) 1;
     }
+
+    /* .job-details-after::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: url("./assets/images/bg1.png") no-repeat;
+        background-size: 25%;
+        z-index: 100;
+        bottom: -15vh;
+        left: 0;
+        
+    }
+    .job-details-after::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: url("./assets/images/bg2.png") no-repeat;
+        background-size: 25%;
+        z-index: 100;
+        top: 0;
+        right: -70vw;
+    } */
+
+    /* .job-details-before::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        background: url("./assets/images/bg2.png") no-repeat;
+        background-size: 25%;
+        z-index: 100;
+        width: 100%;
+        height: 100%;
+        right: 0;
+    } */
 }
 
 body {
