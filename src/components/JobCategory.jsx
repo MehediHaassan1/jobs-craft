@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from "react";
+import { useScroll } from "framer-motion";
+import React, { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
 
 const JobCategory = () => {
     const [jobCategories, setJobCategories] = useState([]);
@@ -8,17 +10,36 @@ const JobCategory = () => {
             .then((data) => setJobCategories(data));
     }, []);
 
+
+
+    const ref = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: ref,
+        offset: ["0 1", "0.5 1"],
+    });
+
     return (
         <div className="min-h-screen lg:flex justify-center items-center">
-            <div>
-                <h1 className="text-4xl lg:text-5xl text-center font-semibold">
+            <div className="overflow-hidden">
+                <motion.h1
+                    style={{
+                        scale: scrollYProgress,
+                        opacity: scrollYProgress,
+                    }}
+                    className="text-4xl lg:text-5xl text-center font-semibold"
+                >
                     Jobs Category
-                </h1>
+                </motion.h1>
                 <p className="text-base lg:text-lg my-6 text-center text-[#A3A3A3]">
                     Explore thousands of job opportunities with all the
                     information you need.
                 </p>
-                <div className="md:grid md:gap-4 md:grid-cols-2 lg:grid-cols-4">
+                <div
+                    // variants={categoryParentAnimate}
+                    // initial="hidden"
+                    // visible="visible"
+                    className="md:grid md:gap-4 md:grid-cols-2 lg:grid-cols-4"
+                >
                     {jobCategories.map((item) => (
                         <div
                             key={item.id}
