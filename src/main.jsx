@@ -9,6 +9,7 @@ import Statistics from "./pages/Statistics.jsx";
 import { AnimatePresence } from "framer-motion";
 import JobDetails from "./components/JobDetails.jsx";
 import Blogs from "./pages/Blogs.jsx";
+import NotFound from "./components/NotFound.jsx";
 
 const router = createBrowserRouter([
     {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
             {
                 path: "blogs",
                 element: <Blogs />,
+            },
+            {
+                path: "*",
+                element: <NotFound />,
             },
         ],
     },
