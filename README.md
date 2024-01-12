@@ -1,8 +1,18 @@
-# React + Vite
+# Jobs-craft
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## [Live Link](https://jobs-craft.netlify.app/)
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   **Programming Language:** JavaScript
+-   **Frontend:** ReactJS
+-   **Route Management:** React router
+-   **CSS framework:** Tailwind CSS
+-   **Version Control:** Git
+-   **Package Management:** npm
+
+## Features
+
+-   Feature 1: Anyone can view jobs
+-   Feature 2: If anyone apply for jobs, the job will be showed in the applied jobs through local storage.
+-   Feature 3: If you want to access any other page, it will be an error and show an error message.
