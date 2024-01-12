@@ -97,7 +97,7 @@ const Statistics = () => {
                     </ResponsiveContainer>
                 </div>
                 <h1 className="text-4xl text-center lg:text-5xl my-5">
-                    Actively Hired Statistics
+                    Actively Hired From Jobs Craft
                 </h1>
             </div>
         </div>

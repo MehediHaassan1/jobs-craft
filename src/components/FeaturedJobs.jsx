@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import FeaturedJob from "./FeaturedJob";
+import { motion, useScroll } from "framer-motion";
 
 const FeaturedJobs = () => {
     const [jobs, setJobs] = useState([]);
@@ -19,12 +20,23 @@ const FeaturedJobs = () => {
         setSlicedJobs(jobs);
         setShowBtn(false);
     };
-
+    const featuredTextRef = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: featuredTextRef,
+        offset: ["0 1", "1 1"],
+    });
     return (
         <div>
-            <h1 className="text-4xl lg:text-5xl text-center font-semibold">
+            <motion.h1
+                ref={featuredTextRef}
+                style={{
+                    scale: scrollYProgress,
+                    opacity: scrollYProgress,
+                }}
+                className="text-4xl lg:text-5xl text-center font-semibold"
+            >
                 Featured Jobs
-            </h1>
+            </motion.h1>
             <p className="text-base lg:text-lg my-6 text-center text-[#A3A3A3]">
                 Unlock your career potential: discover, apply, and thrive.
             </p>
@@ -34,7 +46,11 @@ const FeaturedJobs = () => {
                         <FeaturedJob key={job.id} job={job}></FeaturedJob>
                     ))}
                 </div>
-                <div className={`text-center mb-10 ${showBtn ? "block" : "hidden"}`}>
+                <div
+                    className={`text-center mb-10 ${
+                        showBtn ? "block" : "hidden"
+                    }`}
+                >
                     <button
                         onClick={handleAllJobs}
                         className="bg-gradient-to-r from-[#656565] to-[#B3FFB3] border rounded px-5 py-3 font-semibold capitalize"

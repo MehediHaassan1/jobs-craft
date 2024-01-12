@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "blog_title": "Introduction to JSON",
+        "blog_description": "Learn the basics of JSON (JavaScript Object Notation) and its usage in data interchange.",
+        "blog_body": "JSON, or JavaScript Object Notation, is a lightweight data interchange format that is easy for humans to read and write, and easy for machines to parse and generate. It is based on a subset of the JavaScript language. JSON is a common data format with diverse uses in electronic data interchange, including web applications and web services.\n\nIn this blog post, we'll delve into the fundamentals of JSON. We'll explore the syntax used to represent data in JSON format, covering objects, arrays, strings, numbers, booleans, and null values. Additionally, we'll discuss the simplicity and flexibility of JSON, making it a popular choice for data serialization and configuration files.\n\nUnderstanding JSON is essential for developers working with modern web technologies. Whether you're building a web application, designing APIs, or configuring settings for your software, a solid grasp of JSON will empower you to work more effectively with data.\n\nBy the end of this blog post, you'll have a solid foundation in JSON and be ready to incorporate it into your development projects.",
+        "blog_image": "https://cdn-icons-png.flaticon.com/512/136/136525.png",
+        "author_name": "John Doe",
+        "published_date": "2024-01-12"
+    },
+    {
+        "id": 2,
+        "blog_title": "Building RESTful APIs with Node.js",
+        "blog_description": "Explore the process of creating RESTful APIs using Node.js and Express.",
+        "blog_body": "RESTful APIs (Representational State Transfer) have become a standard for designing web services due to their simplicity and scalability. In this blog post, we will focus on building RESTful APIs using Node.js and the Express framework.\n\nWe'll start by understanding the principles of REST and how it influences API design. Then, we'll dive into the Node.js ecosystem and explore how Express simplifies the process of creating robust and scalable APIs. Topics covered include routing, middleware, request handling, and response formatting.\n\nBy the end of this tutorial, you'll have a working knowledge of building RESTful APIs with Node.js. Whether you're a beginner or an experienced developer, this guide will equip you with the skills needed to create powerful and efficient web services.",
+        "blog_image": "https://schportalmedia.s3.eu-west-2.amazonaws.com/courseimg/node-api.jpg",
+        "author_name": "Jane Smith",
+        "published_date": "2024-01-15"
+    },
+    {
+        "id": 3,
+        "blog_title": "Python Web Scraping Tutorial",
+        "blog_description": "A step-by-step guide to web scraping using Python and BeautifulSoup.",
+        "blog_body": "Web scraping is a valuable skill for extracting information from websites and gathering data for various purposes. In this comprehensive tutorial, we'll guide you through the process of web scraping using Python and the BeautifulSoup library.\n\nWe'll cover the basics of HTML parsing, navigating the DOM (Document Object Model), and selecting elements for extraction. Additionally, we'll explore common challenges in web scraping, such as handling dynamic content and avoiding anti-scraping measures.\n\nBy the end of this tutorial, you'll have a solid understanding of web scraping techniques with Python and be ready to apply them to your own projects. Whether you're collecting data for research, monitoring prices, or gathering information for analysis, web scraping with Python opens up a world of possibilities.",
+        "blog_image": "https://images.prismic.io/oxylabs-sm/ZDIwODc5ZDQtNmNlNC00NjVmLTg0ZmQtZDBjN2IzYTExOTVl_oxylabs-images-05.jpeg?auto=compress,format&rect=0,0,1200,646&w=1200&h=646",
+        "author_name": "Bob Johnson",
+        "published_date": "2024-01-20"
+    },
+    {
+        "id": 4,
+        "blog_title": "Machine Learning Fundamentals",
+        "blog_description": "An overview of basic concepts in machine learning and their applications.",
+        "blog_body": "Machine learning is a transformative field that empowers computers to learn from data and make decisions without explicit programming. In this blog post, we'll explore the fundamentals of machine learning, covering key concepts such as supervised learning, unsupervised learning, and reinforcement learning.\n\nWe'll discuss the importance of training data, feature engineering, and model evaluation. Additionally, we'll showcase practical applications of machine learning in various domains, from image recognition to natural language processing.\n\nWhether you're a newcomer to machine learning or looking to deepen your understanding, this post will provide a solid foundation. By the end, you'll appreciate the power of machine learning and its potential to revolutionize how we solve complex problems.",
+        "blog_image": "https://miro.medium.com/v2/resize:fit:720/format:webp/0*IrxP1sZ14Z0qqIic.png",
+        "author_name": "Alice Wilson",
+        "published_date": "2024-01-25"
+    }
+]

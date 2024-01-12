@@ -31,13 +31,13 @@ const AppliedJob = ({ job }) => {
                                 {jobType}
                             </h3>
                         </div>
-                        <div>
+                        <div className="lg:flex lg:gap-4 items-center">
                             <p className="mb-2 lg:mb-3 flex items-center gap-1 lg:gap-2">
-                                <IoLocationOutline />
+                                <IoLocationOutline className="text-green-300" />
                                 Dhanmondi, Dhaka, Bangladesh
                             </p>
                             <p className="mb-2 lg:mb-3 flex items-center gap-1 lg:gap-2">
-                                <PiCurrencyCircleDollarFill />
+                                <PiCurrencyCircleDollarFill className="text-green-300" />
                                 Salary : 100K - 150K (Per Month)
                             </p>
                         </div>

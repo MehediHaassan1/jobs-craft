@@ -25,7 +25,11 @@ const FeaturedJob = ({ job }) => {
             </div>
             <div className="lg:w-3/4 lg:flex  justify-between items-center">
                 <h4 className="flex items-center gap-2 my-2 text-[#757575]">
-                    <img src={location} alt="Dhaka, Bangladesh" />
+                    <img
+                        className="linear-text"
+                        src={location}
+                        alt="Dhaka, Bangladesh"
+                    />
                     Dhaka, Bangladesh
                 </h4>
                 <h4 className="flex items-center gap-2 my-2 text-[#757575]">

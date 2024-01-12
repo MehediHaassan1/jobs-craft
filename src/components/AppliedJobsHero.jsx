@@ -4,6 +4,7 @@ import bg2 from "../assets/images/bg2.png";
 import { dataFromDb } from "../utilities/fakeDb";
 import AppliedJob from "./AppliedJob";
 import jobs from "../../public/featuredJobs.json";
+import { easeInOut, motion } from "framer-motion";
 
 const AppliedJobsHero = () => {
     const data = dataFromDb();
@@ -51,10 +52,18 @@ const AppliedJobsHero = () => {
 
     return (
         <div>
-            <div className="h-1/2 w-full relative">
-                <h1 className="text-center text-4xl lg:text-5xl font-semibold py-20 lg:py-32">
+            <div className="h-1/2 w-full relative overflow-hidden">
+                <motion.h1
+                    initial={{ y: "100%" }}
+                    animate={{ y: "0%" }}
+                    transition={{
+                        duration: 0.75,
+                        ease: "easeInOut",
+                    }}
+                    className="text-center text-4xl lg:text-5xl font-semibold py-20 lg:py-32"
+                >
                     Applied Jobs
-                </h1>
+                </motion.h1>
                 <div className="absolute bottom-0 left-0">
                     <img src={bg1} alt="" />
                 </div>
